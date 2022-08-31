@@ -13,6 +13,7 @@ import { ClientsComponent } from './homepage/shared/components/clients/clients.c
 import { QuestionsComponent } from './homepage/shared/components/questions/questions.component';
 import { MapComponent } from './homepage/shared/components/map/map.component';
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
+import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './homepage/shared/components/footer/footer.comp
     ClientsComponent,
     QuestionsComponent,
     MapComponent,
-    FooterComponent
+    FooterComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule
