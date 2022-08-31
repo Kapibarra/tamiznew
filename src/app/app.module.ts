@@ -14,6 +14,7 @@ import { QuestionsComponent } from './homepage/shared/components/questions/quest
 import { MapComponent } from './homepage/shared/components/map/map.component';
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
+import { MainpageComponent } from './homepage/mainpage/mainpage.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BurgerComponent } from './homepage/shared/components/burger/burger.comp
     QuestionsComponent,
     MapComponent,
     FooterComponent,
-    BurgerComponent
+    BurgerComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule
