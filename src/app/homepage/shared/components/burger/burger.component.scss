@@ -1,6 +1,6 @@
 $burgerWidth: 24px;
 $burgerBarHeight: 1px;
-$burgerBarColor: #F74902;
+$burgerBarColor: #213450;
 .burger-menu {
     font-weight: 700;
     font-family: Nunito;
@@ -17,7 +17,7 @@ $burgerBarColor: #F74902;
             position: absolute;
             width: $burgerWidth - 2 * $burgerBarHeight;
             z-index: 10;
-            color: #F74902;
+            color: #213450;
             left: 0px;
             top: 11px;
             border: $burgerBarHeight solid $burgerBarColor;
@@ -109,6 +109,7 @@ $burgerBarColor: #F74902;
                 font-size: 32px;
                 text-decoration: none;
                 color: #282828;
+                font-family: Comfortaa, serif;
                 & .nav__item-inner:before {
                     content: attr(data-text);
                     overflow: hidden;

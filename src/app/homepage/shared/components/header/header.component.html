@@ -1,1 +1,23 @@
-<p>header works!</p>
+<div class="header-wrapper">
+    <div class="header">
+        <div class="header__logo">
+            <div class="header__logo-img">
+                <img class="header__logo-img" src="assets/imgs/tamizlogo.png">
+                <div class="header__logo-splitter"></div>
+                <img class="header__logo-img" src="assets/imgs/cadilalogo.png">
+            </div>
+        </div>
+        <div class="header__navigation" *ngIf="!mobile">
+            <div class="navigation-wrapper">
+                <ul>
+                    <li class="header__navigation-item"><a (click)="onClickScroll('hero')">Инструкция</a></li>
+                    <li class="header__navigation-item"><a (click)="onClickScroll('about')">Подобрать препарат</a></li>
+                    <li class="header__navigation-item"><a (click)="onClickScroll('prescription')">Рекомендации</a></li>
+                    <li class="header__navigation-item"><a (click)="onClickScroll('blog')">Вопросы</a></li>
+                    <li class="header__navigation-item"><a (click)="onClickScroll('locations')">Где купить?</a></li>
+                </ul>
+            </div>
+        </div>
+        <app-burger *ngIf="mobile"></app-burger>
+    </div>
+</div>
