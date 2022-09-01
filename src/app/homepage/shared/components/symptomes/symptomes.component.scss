@@ -1,3 +1,22 @@
+:host::ng-deep {
+    @import "swiper/scss";
+    @import "swiper/scss/navigation";
+    @import "swiper/scss/pagination";
+    .swiper-button-prev:after {
+        content: "🠐";
+        font-size: 24px;
+        color: #282828;
+    }
+    .swiper-button-next:after {
+        content: "🠒";
+        font-size: 24px;
+        color: #282828;
+    }
+    .swiper {
+        box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
+    }
+}
+
 .symptomes__wrapper {
     width: 100%;
     margin: 0 auto;
@@ -27,6 +46,13 @@
 }
 
 .symptomes {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     & .symptomes__info {
         width: 100%;
         max-width: 432px;
@@ -43,5 +69,8 @@
             }
         }
     }
-    & .symptomes__video {}
+    & .symptomes__video {
+        width: 100%;
+        max-width: 570px;
+    }
 }
