@@ -25,3 +25,23 @@
         max-width: 900px;
     }
 }
+
+.symptomes {
+    & .symptomes__info {
+        width: 100%;
+        max-width: 432px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        & .symptomes__info-icon {
+            width: 180px;
+            max-width: 192px;
+            margin-bottom: 20px;
+            & .symptomes__description {
+                margin-top: 5px;
+            }
+        }
+    }
+    & .symptomes__video {}
+}

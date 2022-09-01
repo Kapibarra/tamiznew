@@ -2,9 +2,16 @@
     <h2 class="symptomes__title">Какие симптомы помогает снять Тамиз?​</h2>
     <h3 class="symptomes__subtitle">Фирменная смесь «Тамиз» - это 5 трав, собранных вместе для комплексного воздействия на организм с целью нормализации процессов пищеварения​</h3>
     <div class="symptomes">
-        <div class="symptomes__info"></div>
+        <div class="symptomes__info">
+            <div class="symptomes__info-icon" *ngFor="let symptome of symptomes">
+                <img class="symptomes__icon" src="{{symptome.src}}">
+                <p class="symptomes__description">{{symptome.description}}</p>
+            </div>
+        </div>
         <div class="symptomes__video">
-
+            <swiper [config]="config">
+                <ng-template swiperSlide></ng-template>
+            </swiper>
         </div>
     </div>
 

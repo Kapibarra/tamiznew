@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './homepage/shared/components/header/header.component';
@@ -34,7 +35,8 @@ import { MainpageComponent } from './homepage/mainpage/mainpage.component';
     MainpageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
