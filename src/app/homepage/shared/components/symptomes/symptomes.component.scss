@@ -1,0 +1,27 @@
+.symptomes__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1420px;
+    margin-top: 20px;
+    & .symptomes__title {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 165%;
+        /* or 66px */
+        color: #213450;
+    }
+    & .symptomes__subtitle {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 165%;
+        /* or 26px */
+        display: flex;
+        align-items: flex-end;
+        color: #001636;
+        max-width: 900px;
+    }
+}
