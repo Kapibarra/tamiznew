@@ -1,0 +1,43 @@
+.pickup {
+    width: 100%;
+    max-width: 1290px;
+    background: linear-gradient(180deg, #005522 -27.08%, #8DD3AB 99.34%);
+    border-radius: 32px;
+    min-height: 178px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    & .pickup__img {}
+    & .pickup__title {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 165%;
+        /* or 53px */
+        color: #FFFFFF;
+    }
+    & .pickup__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 13px 50px;
+        width: 280px;
+        height: 56px;
+        border: none;
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 165%;
+        /* or 31px */
+        background: #006B2F;
+        border-radius: 5px;
+        color: #FFFFFF;
+    }
+}

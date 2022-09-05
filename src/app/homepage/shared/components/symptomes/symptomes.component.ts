@@ -45,6 +45,7 @@ export class SymptomesComponent implements OnInit {
       description:'Тяжесть в животе'
       },
   ];
+  mobile = false;
   config: SwiperOptions = {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -58,5 +59,10 @@ export class SymptomesComponent implements OnInit {
   };
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (window.screen.width <= 768) {
+      // 768px portrait
+      this.mobile = true;
+    }
+  }
 }
