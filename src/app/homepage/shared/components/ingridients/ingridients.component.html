@@ -1,14 +1,14 @@
 <div class="ingridients__wrapper">
     <div class="ingridients">
-        <div class="ingridients__card" *ngFor="let card of ingridients">
+        <div class="ingridients__card" *ngFor="let card of ingridients;">
             <h3 class="card__title">{{card.title}}</h3>
             <div class="card__inner-wrapper">
-                <div class="card__image" (click)="toggleDialog()">
+                <div class="card__image" (click)="toggleDialog(card.id)">
                     <img src="{{card.image}}">
                 </div>
             </div>
-            <div class="card__dialog" [class.active]="active">
-                <div class="card__dialog-button"><img src="assets/imgs/closebtn.png " (click)="toggleDialog()"></div>
+            <div class="card__dialog" [class.active]="active" id="{{card.id}}">
+                <div class="card__dialog-button"><img src="assets/imgs/closebtn.png " (click)="toggleDialog(card.id)"></div>
                 <div class="card__dialog-description">{{card.description}}</div>
                 <div class="card__dialog-compound">{{card.compound}}</div>
             </div>
