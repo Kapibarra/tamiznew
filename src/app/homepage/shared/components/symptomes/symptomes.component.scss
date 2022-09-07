@@ -93,6 +93,7 @@
             margin-bottom: 20px;
         }
         & .video {
+            overflow-x: hidden;
             & iframe {}
         }
     }

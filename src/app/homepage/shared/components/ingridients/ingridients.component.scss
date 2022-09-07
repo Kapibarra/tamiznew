@@ -38,5 +38,38 @@
                 margin: 0 auto;
             }
         }
+        & .card__dialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: #F8F9FA;
+            border-radius: 32px;
+            max-width: 790px;
+            display: none;
+            & .card__dialog-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                box-sizing: border-box;
+                padding: 15px;
+            }
+            & .card__dialog-description {
+                box-sizing: border-box;
+                padding: 40px;
+                padding-top: 10px;
+            }
+            & .card__dialog-compound {
+                background: radial-gradient(73.8% 124.59% at 82.03% 36.35%, #E7FFE1 14.06%, #F3FFF4 53.65%, #E0FFF0 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+                ;
+                border-radius: 32px;
+                box-sizing: border-box;
+                padding: 40px;
+            }
+        }
     }
+}
+
+.active {
+    display: block !important;
 }

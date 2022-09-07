@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="card__dialog" [class.active]="active">
-                <div class="card__dialog-button"></div>
+                <div class="card__dialog-button"><img src="assets/imgs/closebtn.png " (click)="toggleDialog()"></div>
                 <div class="card__dialog-description">{{card.description}}</div>
                 <div class="card__dialog-compound">{{card.compound}}</div>
             </div>
