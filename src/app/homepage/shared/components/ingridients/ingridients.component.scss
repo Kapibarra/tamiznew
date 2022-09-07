@@ -1,0 +1,42 @@
+.ingridients__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1272px;
+    margin-top: 60px;
+}
+
+.ingridients {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    & .ingridients__card {
+        width: 100%;
+        max-width: 333px;
+        & .card__title {
+            text-align: center;
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 165%;
+            /* or 40px */
+            color: #001636;
+        }
+        & .card__inner-wrapper {
+            background: linear-gradient(180deg, rgba(0, 106, 47, 0.61) 11.46%, rgba(0, 106, 47, 0.29) 69.27%, rgba(0, 106, 47, 0.22) 100%);
+            border-radius: 37px;
+            max-width: 333px;
+        }
+        & .card__image {
+            display: block;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            & img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -1,1 +1,17 @@
-<p>ingridients works!</p>
+<div class="ingridients__wrapper">
+    <div class="ingridients">
+        <div class="ingridients__card" *ngFor="let card of ingridients">
+            <h3 class="card__title">{{card.title}}</h3>
+            <div class="card__inner-wrapper">
+                <div class="card__image" (click)="toggleDialog()">
+                    <img src="{{card.image}}">
+                </div>
+            </div>
+            <div class="card__dialog" [class.active]="active">
+                <div class="card__dialog-button"></div>
+                <div class="card__dialog-description">{{card.description}}</div>
+                <div class="card__dialog-compound">{{card.compound}}</div>
+            </div>
+        </div>
+    </div>
+</div>
