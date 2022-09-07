@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 
 interface Ingridients {
   id: number;
@@ -14,6 +14,7 @@ interface Ingridients {
   styleUrls: ['./ingridients.component.scss'],
 })
 export class IngridientsComponent implements OnInit {
+  activeDialog: {} = {};
   ingridients: Ingridients[] = [
     {
       id: 1,
@@ -64,12 +65,9 @@ export class IngridientsComponent implements OnInit {
   constructor() {}
   active = false;
   @Input() init!: boolean;
-  @Output() opened = new EventEmitter<any>();
   ngOnInit(): void {}
   toggleDialog($event:any) {
     console.log($event);
-    
     this.active = !this.active;
-    this.opened.emit();
   }
 }
