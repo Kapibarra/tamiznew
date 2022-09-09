@@ -1,31 +1,35 @@
 .acc-header {
-    border-top: 1px solid #70b2eb;
+    border-bottom: 1px solid #C8EEE2;
     min-height: 30px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 25px 0px;
+    box-sizing: border-box;
+    padding: 25px;
 }
 
 .header__title {
-    font-family: "Ubuntu";
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 20px;
-    color: #282828;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    /* Black */
+    color: #151515;
 }
 
 .body {
-    font-family: "Ubuntu";
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 15px;
-    color: #282828;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     padding-bottom: 30px;
+    box-sizing: border-box;
+    padding: 25px;
 }
 
 .accordion__icon {

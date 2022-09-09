@@ -3,7 +3,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-faq-item',
+  selector: 'app-question-item',
   templateUrl: './question-item.component.html',
   styleUrls: ['./question-item.component.scss'],
   animations:[
@@ -24,7 +24,7 @@ import { Component, Input, OnInit } from '@angular/core';
 transform: 'rotate(0)'
       })),
       state('rotated' ,style({
-        transform: 'rotate(90deg)'
+        transform: 'rotate(180deg)'
       })),
       transition('default<=>rotated', animate('250ms'))
     ])

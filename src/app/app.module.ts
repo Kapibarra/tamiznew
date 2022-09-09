@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SwiperModule } from 'swiper/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './homepage/shared/components/header/header.component';
@@ -39,6 +40,7 @@ import { QuestionItemComponent } from './homepage/shared/components/questions/qu
   imports: [
     BrowserModule,
     SwiperModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
