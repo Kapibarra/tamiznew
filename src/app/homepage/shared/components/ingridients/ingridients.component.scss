@@ -34,6 +34,9 @@
             margin: 0 auto;
             padding-top: 20px;
             padding-bottom: 20px;
+            &:hover {
+                cursor: pointer;
+            }
             & img {
                 display: block;
                 margin: 0 auto;
@@ -41,19 +44,25 @@
         }
         & .card__dialog {
             position: fixed;
-            top: 50%;
+            top: 30%;
             left: 50%;
             transform: translate(-50%, 0);
             background: #F8F9FA;
             border-radius: 32px;
             max-width: 790px;
             display: none;
+            box-shadow: 0 8px 20px 0 rgb(0 0 0 / 9%);
+            filter: drop-shadow(0px 12px 36px rgba(28, 64, 97, 0.3)) drop-shadow(0px 4px 12px rgba(28, 64, 97, 0.26));
+            box-sizing: border-box;
             & .card__dialog-button {
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
                 box-sizing: border-box;
                 padding: 15px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             & .card__dialog-description {
                 box-sizing: border-box;
@@ -66,6 +75,16 @@
                 border-radius: 32px;
                 box-sizing: border-box;
                 padding: 40px;
+            }
+            & .card__dialog-overlay {
+                position: fixed;
+                z-index: -1;
+                top: -200%;
+                left: -100%;
+                width: 200vw;
+                overflow: hidden;
+                height: 500vh;
+                background: rgba(#f6fffb, 0.6)
             }
         }
     }
