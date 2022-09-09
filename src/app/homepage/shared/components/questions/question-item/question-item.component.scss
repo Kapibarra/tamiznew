@@ -1,0 +1,33 @@
+.acc-header {
+    border-top: 1px solid #70b2eb;
+    min-height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.header__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 20px;
+    color: #282828;
+    margin-bottom: 10px;
+}
+
+.body {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 15px;
+    color: #282828;
+    padding-bottom: 30px;
+}
+
+.accordion__icon {
+    margin-left: 10px;
+}

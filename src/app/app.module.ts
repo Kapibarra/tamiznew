@@ -16,7 +16,7 @@ import { MapComponent } from './homepage/shared/components/map/map.component';
 import { FooterComponent } from './homepage/shared/components/footer/footer.component';
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 import { MainpageComponent } from './homepage/mainpage/mainpage.component';
-import { QuestionItemComponent } from './homepage/shared/components/question/question-item/question-item.component';
+import { QuestionItemComponent } from './homepage/shared/components/questions/question-item/question-item.component';
 
 @NgModule({
   declarations: [
