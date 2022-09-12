@@ -1,4 +1,7 @@
 .clients__wrapper {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
     & .clients {
         display: flex;
         flex-direction: row;
@@ -39,6 +42,18 @@
                 max-width: 290px;
                 margin-left: 10px;
             }
+        }
+    }
+}
+
+@media screen and (max-width:428px) {
+    .clients {
+        flex-direction: column !important;
+        & ul {
+            max-height: 1000px !important;
+        }
+        & .clients__title {
+            margin-bottom: 20px;
         }
     }
 }

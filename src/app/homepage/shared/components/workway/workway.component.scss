@@ -69,3 +69,11 @@
     font-weight: 600 !important;
     font-size: 20px;
 }
+
+@media screen and (max-width:428px) {
+    .workway__card {
+        margin-bottom: 20px;
+        height: auto !important;
+        display: block !important;
+    }
+}

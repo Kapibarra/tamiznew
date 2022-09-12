@@ -8,6 +8,7 @@
 .card-1 {
     min-height: 276px;
     max-width: 770px;
+    width: 100%;
     margin-bottom: 64px;
 }
 
@@ -19,6 +20,8 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        width: 100%;
+        max-width: 421px;
     }
 }
 

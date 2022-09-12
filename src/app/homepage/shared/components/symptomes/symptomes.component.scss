@@ -21,6 +21,9 @@
     margin: 0 auto;
     max-width: 1272px;
     margin-top: 20px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
     & .symptomes__title {
         font-family: 'Comfortaa';
         font-style: normal;
@@ -96,5 +99,12 @@
             overflow-x: hidden;
             & iframe {}
         }
+    }
+}
+
+@media screen and (max-width:428px) {
+    .symptomes__wrapper {}
+    .symptomes__title {
+        font-size: 22px !important;
     }
 }

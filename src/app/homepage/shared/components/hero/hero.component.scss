@@ -57,3 +57,14 @@
         }
     }
 }
+
+@media screen and (max-width:428px) {
+    .hero__title {
+        font-size: 32px !important;
+        text-align: center !important;
+        margin-bottom: 15px;
+    }
+    .hero__button {
+        margin: 0 auto !important;
+    }
+}

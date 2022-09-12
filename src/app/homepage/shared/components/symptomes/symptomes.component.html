@@ -8,9 +8,9 @@
                 <p class="symptomes__description">{{symptome.description}}</p>
             </div>
         </div>
-        <div class="symptomes__video">
+        <div class="symptomes__video" *ngIf="!mobile">
             <h4 class="video__title">Рекомендации врача​</h4>
-            <swiper [config]="config" *ngIf="!mobile">
+            <swiper [config]="config">
                 <ng-template swiperSlide>
                     <div class="video">
                         <iframe width="520" height="270" src="https://www.youtube.com/embed/wAFWlDOH9Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -18,14 +18,15 @@
                 </ng-template>
                 <ng-template swiperSlide><iframe width="520" height="270" src="https://www.youtube.com/embed/9X6NZmlNvMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></ng-template>
             </swiper>
-            <swiper [config]="config" *ngIf="mobile">
-                <ng-template swiperSlide>
-                    <div class="video">
-                        <iframe width="350" height="230" src="https://www.youtube.com/embed/wAFWlDOH9Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </ng-template>
-                <ng-template swiperSlide><iframe width="350" height="230" src="https://www.youtube.com/embed/9X6NZmlNvMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></ng-template>
-            </swiper>
+        </div>
+        <div class="symptomes__video" *ngIf="mobile">
+            <h4 class="video__title">Рекомендации врача​</h4>
+            <div>
+                <div class="video">
+                    <iframe width="350" height="230" src="https://www.youtube.com/embed/wAFWlDOH9Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div><iframe width="350" height="230" src="https://www.youtube.com/embed/9X6NZmlNvMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
     </div>
 
