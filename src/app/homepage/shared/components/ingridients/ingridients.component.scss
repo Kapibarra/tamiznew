@@ -44,7 +44,8 @@
         }
         & .card__dialog {
             position: fixed;
-            top: 25%;
+            top: 15%;
+            // overflow-y: scroll;
             left: 50%;
             transform: translate(-50%, 0);
             background: #F8F9FA;
