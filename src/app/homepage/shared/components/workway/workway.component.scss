@@ -3,6 +3,9 @@
     margin: 0 auto;
     max-width: 1372px;
     margin-top: 60px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
     & .workway__title {
         font-family: 'Comfortaa';
         font-style: normal;
@@ -75,5 +78,8 @@
         margin-bottom: 20px;
         height: auto !important;
         display: block !important;
+    }
+    .workway__title {
+        font-size: 28px !important;
     }
 }

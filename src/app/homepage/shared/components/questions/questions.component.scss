@@ -3,6 +3,9 @@
     margin: 0 auto;
     max-width: 1372px;
     margin-top: 60px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
     & .questions__title {
         font-family: 'Comfortaa';
         font-style: normal;
@@ -25,4 +28,10 @@
 .accordion__module {
     border: 1px solid #C8EEE2;
     box-sizing: border-box;
+}
+
+@media screen and (max-width:428px) {
+    .questions__title {
+        font-size: 28px !important;
+    }
 }

@@ -3,6 +3,9 @@
     margin: 0 auto;
     max-width: 1372px;
     margin-top: 60px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
     & .map__title {
         font-family: 'Comfortaa';
         font-style: normal;
@@ -60,5 +63,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:428px) {
+    .map__title {
+        font-size: 28px !important;
     }
 }

@@ -3,6 +3,9 @@
     margin: 0 auto;
     max-width: 1272px;
     margin-top: 60px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card-1 {
@@ -59,5 +62,25 @@
         /* or 33px */
         color: #000000;
         list-style-type: disc;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .about__card {
+        margin-bottom: 30px;
+    }
+    .about__card-table {
+        max-width: 421px;
+        width: 100%;
+        & .about__table {
+            max-width: 421px;
+            width: 100%;
+        }
+    }
+    .about__card-title {
+        font-size: 28px !important;
+    }
+    .about__card-subtitle {
+        font-size: 16px !important;
     }
 }
