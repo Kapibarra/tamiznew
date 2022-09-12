@@ -1,3 +1,21 @@
+.questions__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1372px;
+    margin-top: 60px;
+    & .questions__title {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 165%;
+        /* or 66px */
+        color: #213450;
+        max-width: 1000px;
+        margin-bottom: 50px;
+    }
+}
+
 .questions {
     width: 100%;
     max-width: 800px;

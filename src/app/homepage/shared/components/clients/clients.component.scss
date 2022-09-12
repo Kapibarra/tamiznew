@@ -1,0 +1,44 @@
+.clients__wrapper {
+    & .clients {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1358px;
+        background: #F5F7FF;
+        border-radius: 32px;
+        margin: 0 auto;
+        margin-top: 60px;
+        box-sizing: border-box;
+        padding: 20px;
+        & .clients__title {
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 145%;
+            /* or 48px */
+            color: #213450;
+            max-width: 320px;
+            display: flex;
+            align-items: center;
+        }
+        & ul {
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 165%;
+            /* or 33px */
+            color: #000000;
+            list-style-type: disc;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 230px;
+            & li {
+                max-width: 290px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
