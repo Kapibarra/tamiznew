@@ -18,6 +18,13 @@ import { FooterComponent } from './homepage/shared/components/footer/footer.comp
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 import { MainpageComponent } from './homepage/mainpage/mainpage.component';
 import { QuestionItemComponent } from './homepage/shared/components/questions/question-item/question-item.component';
+import { StepperComponent } from './homepage/shared/components/stepper/stepper.component';
+import { MatStepperModule } from '@angular/material/stepper';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
+
 
 @NgModule({
   declarations: [
@@ -35,11 +42,17 @@ import { QuestionItemComponent } from './homepage/shared/components/questions/qu
     FooterComponent,
     BurgerComponent,
     MainpageComponent,
-    QuestionItemComponent
+    QuestionItemComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
     SwiperModule,
+    MatFormFieldModule,
+    MatInputModule,
     BrowserAnimationsModule,
   ],
   providers: [],
