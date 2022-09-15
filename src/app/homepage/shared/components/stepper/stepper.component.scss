@@ -1,0 +1,62 @@
+.step__title {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 165%;
+    color: #213450;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.step__subtitle {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 165%;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.step__btn-wrapper {
+    margin-top: 20px;
+}
+
+.step__title-small {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 165%;
+    color: #213450;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.step__result-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    & .result__description {
+        font-family: "Comfortaa";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 165%;
+        color: #000000;
+        margin-top: 5px;
+    }
+    & .result__image {
+        width: 100%;
+        max-width: 250px;
+        & img {
+            width: 100%;
+            max-width: 250px;
+        }
+    }
+}
