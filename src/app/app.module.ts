@@ -23,6 +23,10 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+import { DialogComponentComponent } from './homepage/shared/components/dialog-component/dialog-component.component';
+
 
 
 
@@ -43,7 +47,8 @@ import {MatInputModule} from '@angular/material/input';
     BurgerComponent,
     MainpageComponent,
     QuestionItemComponent,
-    StepperComponent
+    StepperComponent,
+    DialogComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -51,9 +56,11 @@ import {MatInputModule} from '@angular/material/input';
     FormsModule,
     ReactiveFormsModule,
     SwiperModule,
+    MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
