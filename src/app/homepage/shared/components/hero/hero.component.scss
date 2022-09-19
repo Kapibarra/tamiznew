@@ -48,6 +48,11 @@
         background: #006B2F;
         border-radius: 5px;
         color: #FFFFFF;
+        &:hover {
+            background: #009641;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
     }
     & .hero__image-item-1 {
         max-width: 564px;
