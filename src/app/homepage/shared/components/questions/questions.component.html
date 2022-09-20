@@ -3,15 +3,10 @@
         Часто задаваемые вопросы
     </h2>
     <div class="questions">
-        <div class="accordion__module">
-            <app-question-item title="Вопрос номер один?">
-                Ответ
+        <div class="accordion__module" *ngFor="let question of questions">
+            <app-question-item title="{{question.question}}">
+                {{question.answer}}
             </app-question-item>
-            <app-question-item title="Вопрос номер два?"> Ответ
-            </app-question-item>
-            <app-question-item title="Вопрос номер три?"> Ответ
-            </app-question-item>
-            <app-question-item title="Вопрос номер четыре?"> Ответ</app-question-item>
         </div>
     </div>
 </div>
