@@ -10,23 +10,22 @@
         </div>
         <div class="symptomes__video" *ngIf="!mobile">
             <h4 class="video__title">Рекомендации врача​</h4>
-            <swiper [config]="config">
-                <ng-template swiperSlide>
-                    <div class="video">
-                        <iframe width="520" height="270" src="https://www.youtube.com/embed/wAFWlDOH9Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </ng-template>
-                <ng-template swiperSlide><iframe width="520" height="270" src="https://www.youtube.com/embed/9X6NZmlNvMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></ng-template>
-            </swiper>
+            <p class="video__description"> Согласно действующему законодательству Российской Федерации, вся информация данного раздела (далее Информация) доступна только для медицинских и фармацевтических работников. В связи с этим для доступа к Информации необходимо подтвердить наличие
+                у вас профессионального медицинского образования, а также ваш статус действующего медицинского или фармацевтического работника. Вы являетесь медицинским или фармацевтическим работником?</p>
+
+            <div class="button__wrapper">
+                <button (click)="openDialog()" class="primary__button">Да</button>
+                <button class="decline__button">Нет</button>
+            </div>
+
+
         </div>
         <div class="symptomes__video" *ngIf="mobile">
             <h4 class="video__title">Рекомендации врача​</h4>
-            <div>
-                <div class="video">
-                    <iframe width="350" height="230" src="https://www.youtube.com/embed/wAFWlDOH9Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div class="button__wrapper">
+                <button (click)="openDialog()" class="primary__button">Да</button>
+                <button class="decline__button">Нет</button>
             </div>
-            <div><iframe width="350" height="230" src="https://www.youtube.com/embed/9X6NZmlNvMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
     </div>
 

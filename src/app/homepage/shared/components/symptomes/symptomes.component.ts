@@ -1,6 +1,5 @@
 import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { SwiperOptions ,Navigation, Autoplay} from 'swiper';
 import { SymptomesDialogComponent } from '../symptomes-dialog/symptomes-dialog.component';
 
 interface Symptomes {
@@ -8,7 +7,7 @@ interface Symptomes {
   id?: number;
   description: string;
 }
-SwiperCore.use([Navigation, Autoplay]);
+
 @Component({
   selector: 'app-symptomes',
   templateUrl: './symptomes.component.html',
@@ -48,17 +47,6 @@ export class SymptomesComponent implements OnInit {
       },
   ];
   mobile = false;
-  config: SwiperOptions = {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    navigation: true,
-    pagination: { clickable: true },
-    scrollbar: { draggable: true },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-  };
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {

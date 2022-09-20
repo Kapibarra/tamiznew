@@ -95,6 +95,71 @@
             color: #213450;
             margin-bottom: 20px;
         }
+        & .video__description {
+            font-family: "Comfortaa";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 165%;
+            text-indent: 15px;
+        }
+        & .button__wrapper {
+            max-width: 300px;
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            & .primary__button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 13px 50px;
+                width: 120px;
+                height: 26px;
+                border: none;
+                font-family: "Comfortaa";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 165%;
+                background: #006B2F;
+                border-radius: 5px;
+                color: #FFFFFF;
+                transition: all 0.3s ease;
+                &:hover {
+                    background: #009641;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+            }
+            & .decline__button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 13px 50px;
+                width: 120px;
+                height: 26px;
+                border: none;
+                font-family: "Comfortaa";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 165%;
+                background: #f18e87;
+                border-radius: 5px;
+                color: #141414;
+                transition: all 0.3s ease;
+                &:hover {
+                    background: #f06e65;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+            }
+        }
         & .video {
             overflow-x: hidden;
             & iframe {}
