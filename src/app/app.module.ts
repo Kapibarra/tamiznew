@@ -26,6 +26,7 @@ import {MatInputModule} from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { DialogComponentComponent } from './homepage/shared/components/dialog-component/dialog-component.component';
+import { SymptomesDialogComponent } from './homepage/shared/components/symptomes-dialog/symptomes-dialog.component';
 
 
 
@@ -48,7 +49,8 @@ import { DialogComponentComponent } from './homepage/shared/components/dialog-co
     MainpageComponent,
     QuestionItemComponent,
     StepperComponent,
-    DialogComponentComponent
+    DialogComponentComponent,
+    SymptomesDialogComponent
   ],
   imports: [
     BrowserModule,

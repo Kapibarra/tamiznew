@@ -1,5 +1,7 @@
+import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
 import SwiperCore, { SwiperOptions ,Navigation, Autoplay} from 'swiper';
+import { SymptomesDialogComponent } from '../symptomes-dialog/symptomes-dialog.component';
 
 interface Symptomes {
   src: string;
@@ -57,12 +59,21 @@ export class SymptomesComponent implements OnInit {
       disableOnInteraction: false
     },
   };
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
     if (window.screen.width <= 768) {
       // 768px portrait
       this.mobile = true;
     }
+  }
+
+  openDialog() {
+    console.log();
+    const dialogRef = this.dialog.open(SymptomesDialogComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }
