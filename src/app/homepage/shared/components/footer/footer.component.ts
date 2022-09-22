@@ -1,5 +1,7 @@
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponentComponent } from './../dialog-component/dialog-component.component';
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  constructor(private viewportscroller: ViewportScroller) { }
+  @Output() onClick = new EventEmitter<any>();
+  constructor(private viewportscroller: ViewportScroller, public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+  openDialog() {
+    console.log();
+    const dialogRef = this.dialog.open(DialogComponentComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
   onClickScroll(elementId: string):void {
     this.viewportscroller.scrollToAnchor(elementId);
