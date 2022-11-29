@@ -2,3 +2,23 @@
     width: 100%;
     max-width: 500px;
 }
+.pop-up-container-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.video {
+    height: 230PX !important;
+}
+.video-dialog {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+
+}
+::ng-deep {
+    .mat-dialog-container {
+        max-height: 110vh;
+    }
+}
